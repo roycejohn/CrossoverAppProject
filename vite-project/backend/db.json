@@ -1,0 +1,50 @@
+{
+  "dishes": [
+    {
+      "id": 1,
+      "name": "Spaghetti Carbonara",
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1001491_11-2e0fa5c.jpg?quality=90&webp=true&resize=440,400",
+      "ingredients": "pancetta, pecorino cheese, parmesan, eggs, spaghetti, plump garlic cloves, unsalted butter, sea salt, freshly ground black pepper",
+      "price": "€30"
+    },
+    {
+      "id": 2,
+      "name": "Pizza Margherita",
+      "image": "https://cookieandkate.com/images/2021/07/margherita-pizza-recipe-1-2-1097x1650.jpg",
+      "ingredients": "San Marzano Tomatoes, , Fresh Mozzarella Balls, Fresh Basil, Olive Oil & Salt",
+      "price": "€25"
+    }
+  ],
+  "desserts": [
+    {
+      "id": 1,
+      "name": "Tiramisu",
+      "image": "https://example.com/images/tiramisu.jpg",
+      "ingredients": "Mascarpone, jajka, kawa, cukier",
+      "price": "€15"
+    },
+    {
+      "id": 2,
+      "name": "Gelato",
+      "image": "https://natashaskitchen.com/wp-content/uploads/2024/04/Tiramisu-Cake-12.jpg",
+      "ingredients": "Espresso, Golden Rum, Ladyfingers, Egg, Sugar, Mascarpone, Heavy Whipping Cream",
+      "price": "€10"
+    }
+  ],
+  "drinks": [
+    {
+      "id": 1,
+      "name": "Esspresso",
+      "image": "https://www.starbucksathome.com/gb/sites/default/files/styles/nutrition_instruction_image/public/2021-02/EspressoIntro_LongShadow.png?itok=dPVq-tH8",
+      "ingredients": "Espresso",
+      "price": "€1.90"
+    },
+    {
+      "id": 2,
+      "name": "Mineral Water",
+      "image": "https://www.juzwater.com/wp-content/uploads/2017/12/cropped-Clean-water-in-glass.jpg",
+      "ingredients": "Mineral Water",
+      "price": "€1"
+    }
+  ]
+}
