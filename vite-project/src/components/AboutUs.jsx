@@ -1,15 +1,34 @@
 
-
 import { useState } from 'react';
 import aboutUsImage from '../assets/aboutUsImage.jpg'
 
 
 const AboutUs = () => {
-  const [message, setMessage] = useState('');
+  
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
 
 
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Name:', name);
+    console.log('Email:', email);
+    setName('');
+    setEmail('');
+
+  };
   return (
+
     <div>
+      
         <section className='about-row flex'>
             <div className="w-1/2">
                 <img className="w-full h-full object-cover "
@@ -32,7 +51,7 @@ const AboutUs = () => {
       
       
 
-        <form onSubmit='' className="p-12 bg-black">
+        <form onSubmit={handleSubmit} className="p-12 bg-black">
             <div className='flex justify-center'>
                 <h1 className='font-semibold text-4xl text-yellow-500'> SAY HELLO</h1>
             </div>
@@ -42,9 +61,9 @@ const AboutUs = () => {
                     <input 
                         type="text" 
                         id="name" 
-                        value='' 
+                        value={name} 
                         placeholder='Name' 
-                        onChange='' 
+                        onChange={handleNameChange}
                         className="border border-gray-300 px-3 py-2 mt-1 focus:outline-none focus:ring-blue-500 focus:border-blue-500 block w-2/6" 
                     />
                 </div>
@@ -53,8 +72,8 @@ const AboutUs = () => {
                     <input 
                         type="email" 
                         id="email" 
-                        value='' 
-                        onChange='' 
+                        value={email} 
+                        onChange={handleEmailChange}
                         placeholder='E-mail' 
                         className="border border-gray-300 px-3 py-2 mt-1 focus:outline-none focus:ring-blue-500 focus:border-blue-500 block w-2/6" 
                     />
@@ -76,6 +95,7 @@ const AboutUs = () => {
             </div>
             
       </form>
+      
     </div>
   );
 };
