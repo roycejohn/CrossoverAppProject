@@ -3,3 +3,15 @@
   padding: 0;
   box-sizing: border-box ;
 }
+.about-row {
+  height: 45rem;
+}
+
+.aboutUs {
+  margin: 210px;
+}
+
+
+::placeholder {
+  color: red;
+}
